@@ -1,5 +1,7 @@
 
-<h1>This indicator is based on Consensio Trading System by Tyler Jenks.</h1>
+<h1>This Moving Average based indicator is based on Consensio Trading System by Tyler Jenks.</h1>
+
+Tests setup to run over price history for Bitcoin Dec 2020 -> June 2021
 
 <h3>What is Direction(D)?</h3>
 
@@ -13,22 +15,25 @@ Consolidation = 1
 
 Down = 0
 
-For example, if LTMA is directed Up, then D=2.
-
 <h3>What is Influence(I)?</h3>
 
 Generally, The fluctuation of the "Price" tends to have less influence on the "LTMA" than the fluctuation of the "STMA".
 this is why each Moving Average has different degree of Influence(I):
 LTMA = 9
+(Long Term Moving Average)
 STMA = 3
+(Short Term Moving Average)
 Price = 1
+(Current daily price direction)
 
-*Moving Average Score*
+For example, if LTMA is directed Up, then D=2.
+
+<h3>Moving Average Score</h3>
 
 To calculate the score of a Moving Average, you Multiply the Moving Average Direction(D) by its Influence(I).
 For example, if LTMA is directed Up then the score of this Moving Average is 18.
 
-*What is Directionality?*
+<h3>What is Directionality?</h3>
 
 Directionality is the sum of all 3 Moving Averages score minus 13.
 
@@ -40,7 +45,7 @@ When Directionality is bigger than 0 the Directionality is Bullish .
 
 When Directionality is smaller than 0 the Directionality is Bearish .
 
-What is Relativity?
+<h3>What is Relativity?</h3>
 
 According to the Consensio trading system, you start by laying 3 Simple Moving Averages:
 
