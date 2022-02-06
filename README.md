@@ -1,28 +1,51 @@
 
 This indicator is based on Consensio Trading System by Tyler Jenks.
+
 What is Relativity?
-According to this trading system, you start by laying 3 Simple Moving Averages:
+
+According to the Consensio trading system, you start by laying 3 Simple Moving Averages:
+
 A Long-Term Moving Average (LTMA).
 A Short-Term Moving Average (STMA).
 A Price Moving Average (Price).
+
 *The "Price" should be A relatively short Moving Average in order to reflect the current price.
+
+
 When laying out those 3 Moving averages on top of each other, you discover 13 unique types of relationships:
+
 Relativity A: Price > STMA, Price > LTMA, STMA > LTMA
+
 Relativity B: Price = STMA, Price > LTMA, STMA > LTMA
+
 Relativity C: Price < STMA, Price > LTMA, STMA > LTMA
+
 Relativity D: Price < STMA, Price = LTMA, STMA > LTMA
+
 Relativity E: Price < STMA, Price < LTMA, STMA > LTMA
+
 Relativity F: Price < STMA, Price < LTMA, STMA = LTMA
+
 Relativity G: Price < STMA, Price < LTMA, STMA < LTMA
+
 Relativity H: Price = STMA, Price < LTMA, STMA < LTMA
+
 Relativity I: Price > STMA, Price < LTMA, STMA < LTMA
+
 Relativity J: Price > STMA, Price = LTMA, STMA < LTMA
+
 Relativity K: Price > STMA, Price > LTMA, STMA < LTMA
+
 Relativity L: Price > STMA, Price > LTMA, STMA = LTMA
+
 Relativity M: Price = STMA, Price = LTMA, STMA = LTMA
+
 So what's the big deal, you may ask?
+
 For the market to go from Bullish State (type A) to Bearish state (type G), the Market must pass through Relativity B, C, D, E, F.
+
 For the market to go from Bearish State (type G) to Bullish state (type A), the Market must pass through Relativity H, I, J, K, L.
+
 Knowing This principle helps you better plan when to enter a market, and when to exit a market, when to Lower your position and when to strengthen your position.
 
 
