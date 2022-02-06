@@ -1,19 +1,21 @@
 
-This indicator is based on Consensio Trading System by Tyler Jenks.
+<h1>This indicator is based on Consensio Trading System by Tyler Jenks.</h1>
 
-*What is Direction(D)?*
+<h3>What is Direction(D)?</h3>
 
 Each Moving Average at any given time is pointing in a certain direction. It can either go Up, Down, or it can be in a Consolidation state.
 
 That's why, each Direction(D) is assigned to a score:
 
 Up = 2
+
 Consolidation = 1
+
 Down = 0
 
 For example, if LTMA is directed Up, then D=2.
 
-*What is Influence(I)?*
+<h3>What is Influence(I)?</h3>
 
 Generally, The fluctuation of the "Price" tends to have less influence on the "LTMA" than the fluctuation of the "STMA".
 this is why each Moving Average has different degree of Influence(I):
