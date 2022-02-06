@@ -1,6 +1,43 @@
 
 This indicator is based on Consensio Trading System by Tyler Jenks.
 
+*What is Direction(D)?*
+
+Each Moving Average at any given time is pointing in a certain direction. It can either go Up, Down, or it can be in a Consolidation state.
+
+That's why, each Direction(D) is assigned to a score:
+
+Up = 2
+Consolidation = 1
+Down = 0
+
+For example, if LTMA is directed Up, then D=2.
+
+*What is Influence(I)?*
+
+Generally, The fluctuation of the "Price" tends to have less influence on the "LTMA" than the fluctuation of the "STMA".
+this is why each Moving Average has different degree of Influence(I):
+LTMA = 9
+STMA = 3
+Price = 1
+
+*Moving Average Score*
+
+To calculate the score of a Moving Average, you Multiply the Moving Average Direction(D) by its Influence(I).
+For example, if LTMA is directed Up then the score of this Moving Average is 18.
+
+*What is Directionality?*
+
+Directionality is the sum of all 3 Moving Averages score minus 13.
+
+For example, if the score of LTMA=18 and STMA=6 and Price=2, then Directionality is equal to 13.
+
+Also, if the score of LTMA=0 and STMA= 0 and Price=0, then Directionality is equal to -13.
+
+When Directionality is bigger than 0 the Directionality is Bullish .
+
+When Directionality is smaller than 0 the Directionality is Bearish .
+
 What is Relativity?
 
 According to the Consensio trading system, you start by laying 3 Simple Moving Averages:
@@ -40,7 +77,7 @@ Relativity L: Price > STMA, Price > LTMA, STMA = LTMA
 
 Relativity M: Price = STMA, Price = LTMA, STMA = LTMA
 
-So what's the big deal, you may ask?
+*So what's the big deal, you may ask?*
 
 For the market to go from Bullish State (type A) to Bearish state (type G), the Market must pass through Relativity B, C, D, E, F.
 
