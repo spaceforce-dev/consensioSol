@@ -13,12 +13,6 @@ contract Consensio {
         direction price;
     }
 
-    struct IndicatorWeights {
-        uint256 LTMA;
-        uint256 STMA;
-        uint256 price;
-    }
-
     struct MovingAverageDurationConfig {
         uint256 LTMA;
         uint256 STMA;
@@ -32,14 +26,10 @@ contract Consensio {
 	Price price;
 	Price[] priceHistory;
 
-    IndicatorWeights indicatorWeights = IndicatorWeights(9, 3, 1);
-
     MovingAverageDurationConfig movingAverageDurationConfig = MovingAverageDurationConfig(
         180,
         28
     );
-
-
 
 	uint256 time;
 	constructor() {
