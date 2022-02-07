@@ -5,6 +5,20 @@ import "hardhat/console.sol";
 
 contract Consensio {
 
+	// Setup fake time
+	uint256 time;
+	constructor() {
+        time = 10000000;
+    }
+
+	// Memory to store price data
+	// Price data could be gathered onchain from oracles if it's cost effective
+	// or could be lookuped old rounds in Chainlink potentially
+	// or Merkle tree off chain proof approach
+	Price price;
+	Price[] priceHistory;
+
+	// Directions the moving average can be travelling
     enum direction {DOWN, FLAT, UP}
 
     struct DirectionState {
@@ -23,18 +37,13 @@ contract Consensio {
         uint256 Time;
     }
 
-	Price price;
-	Price[] priceHistory;
-
+	// Set config
+	// Long Term Moving Average 180 day 
+	// Short Term Moving Average 28 day 
     MovingAverageDurationConfig movingAverageDurationConfig = MovingAverageDurationConfig(
         180,
         28
     );
-
-	uint256 time;
-	constructor() {
-        time = 10000000;
-    }
 
 	function getTime() public view returns (uint256) {
 		return block.timestamp;
